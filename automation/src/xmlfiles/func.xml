@@ -1,0 +1,32 @@
+<suite name="st">
+
+
+<parameter name="web_address" value="https://www.bestbuy.com"></parameter>
+<parameter name="browser_value" value="edge"></parameter>
+<listeners>
+<listener class-name="Combestbuy.listeners"></listener> 
+</listeners>
+
+<test name="test1">
+<parameter name="browser_value" value="edge"></parameter>
+
+<groups>
+<run>
+<include name="multi"></include>
+</run>
+</groups>
+
+
+
+<classes>
+<class name="Combestbuy.access_properties"></class>
+</classes>
+</test>
+
+
+
+</suite>
+
+
+
+
